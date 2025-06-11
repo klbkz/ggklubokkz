@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GG Klub</title>
+  <meta name="description" content="GG Klub — закрытое мужское сообщество. Telegram ссылка внутри.">
+
+  <!-- Facebook Pixel -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.agent='html';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', 'ВАШ_PIXEL_ID'); // Замените на ваш Pixel ID
+    fbq('track', 'PageView');
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=ВАШ_PIXEL_ID&ev=PageView&noscript=1"/>
+  </noscript>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #0e0e0e;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+    .avatar {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid #fff;
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-size: 26px;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 16px;
+      margin-bottom: 20px;
+      color: #ccc;
+    }
+    .btn {
+      display: inline-block;
+      background-color: #1d98dc;
+      color: white;
+      padding: 14px 28px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 18px;
+      transition: background-color 0.3s;
+      margin-top: 10px;
+    }
+    .btn:hover {
+      background-color: #157cb0;
+    }
+    .block {
+      margin-bottom: 40px;
+    }
+    .block img {
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+      margin-top: 20px;
+      border-radius: 8px;
+    }
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 22px;
+      }
+      .btn {
+        font-size: 16px;
+        padding: 12px 20px;
+      }
+      p {
+        font-size: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="block">
+    <img src="https://ggklub.mssg.me/static/images/default_avatar.png" alt="GG Klub" class="avatar">
+    <h1>GG Klub</h1>
+    <p>Жабық ерлер клубы. Вечерний покер, өз адамдар.</p>
+    <a href="https://t.me/+pk4AkcEMKh40ZjZl" class="btn" id="tg-button" target="_blank" rel="noopener">Telegram-ға қосылу</a>
+  </div>
+
+  <div class="block">
+    <p>Тек қана өзіміз үшін. Без понтов, без масок. Атмосфера — на уровне.</p>
+    <img src="https://ggklub.mssg.me/static/images/1.png" alt="Image 1">
+  </div>
+
+  <div class="block">
+    <p>Байланыс, достық, кешкі карта ойыны. Еркектерге арналған демалыс.</p>
+    <img src="https://ggklub.mssg.me/static/images/2.png" alt="Image 2">
+  </div>
+
+  <div class="block">
+    <p>Telegram ішінде — нақты движ. Басқалар жоқ. Бауырлар ғана.</p>
+    <img src="https://ggklub.mssg.me/static/images/3.png" alt="Image 3">
+  </div>
+
+  <div class="block">
+    <p>Кешке қосыл. Вайб түсінетіндерге арналған орын.</p>
+    <img src="https://ggklub.mssg.me/static/images/4.png" alt="Image 4">
+  </div>
+
+  <script>
+    document.getElementById('tg-button').addEventListener('click', function () {
+      if (typeof fbq !== 'undefined') {
+        fbq('track', 'Lead');
+        console.log('fbq: Lead sent');
+      }
+    });
+  </script>
+</body>
+</html>
